@@ -1,0 +1,39 @@
+00:07:48.532 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+00:07:48.555 not a js function or feature file: [type: PRIMITIVE, value: 1]
+00:07:49.203 request:
+1 > GET https://api.openbrewerydb.org/breweries/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.openbrewerydb.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+00:07:50.246 response time in milliseconds: 1041.01
+1 < 404
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 643367812bd7b90b-MIA
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 21 Apr 2021 03:07:49 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=JvhsCIcK3h08OQUqr%2BmrwRqGknY9S2rz9yfIx7PyhxhVXFrmOhW9qBUN6lfsdvNo55tPJFBnm0TgXqJwmZWNDHIHmBOmhYYJLBSDSPsQQcOTtsFtkx0%3D"}],"max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dc34be44bf9b66906557465868bad9cca1618974469; expires=Fri, 21-May-21 03:07:49 GMT; path=/; domain=.openbrewerydb.org; HttpOnly; SameSite=Lax; Secure
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Via: 1.1 vegur
+1 < X-Request-Id: 387668c6-53bd-4a99-ab9c-644cfe956ce1
+1 < X-Runtime: 0.009032
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0993ff04bd0000b90bc526f000000001
+{"message":"Couldn't find Brewery with 'id'=1"}
+
+00:07:50.337 [print] {
+  "message": "Couldn't find Brewery with 'id'=1"
+}
+
+1"
+}
+

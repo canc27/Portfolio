@@ -1,0 +1,211 @@
+21:12:22.194 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+21:12:22.967 request:
+1 > GET https://api.openbrewerydb.org/breweries/autocomplete?query=lagunitas
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.openbrewerydb.org
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+21:12:24.229 response time in milliseconds: 1258.71
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6442e1469e9c3687-LAX
+1 < Cache-Control: max-age=86400, public
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 23 Apr 2021 00:12:23 GMT
+1 < Etag: W/"824da07f306c2eb865092a24db9cf668"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=KVb%2BYbWFIafkchyh2d5SNmJ1b%2FhDgp%2BSaGUOFnDDf1SAyFz8pxgZ2axqRLfffzAokBILahdFW%2Fjvg5k1YZv8tulLpjwIse3s63Q3xk6p2EAiCJbThT0%3D"}]}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d05e522daee4174ebc05bbed726ad31ff1619136743; expires=Sun, 23-May-21 00:12:23 GMT; path=/; domain=.openbrewerydb.org; HttpOnly; SameSite=Lax; Secure
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < Via: 1.1 vegur
+1 < X-Request-Id: 947d8449-4c7d-42fe-8265-86f904554f35
+1 < X-Runtime: 0.051323
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 099dab201f00003687cb9b4000000001
+[{"id":"12039","name":"Lagunitas Brewing Co"},{"id":"12040","name":"Lagunitas Brewing Co"},{"id":"12041","name":"Lagunitas Seattle Taproom and Beer Sanctuary"}]
+
+21:12:24.299 [print] [
+  {
+    "name": "Lagunitas Brewing Co",
+    "id": "12039"
+  },
+  {
+    "name": "Lagunitas Brewing Co",
+    "id": "12040"
+  },
+  {
+    "name": "Lagunitas Seattle Taproom and Beer Sanctuary",
+    "id": "12041"
+  }
+]
+
+21:12:24.354 [print] [
+  {
+    "name": "Lagunitas Brewing Co",
+    "id": "12039"
+  },
+  {
+    "name": "Lagunitas Brewing Co",
+    "id": "12040"
+  }
+]
+
+21:12:24.373 [print] 12039
+21:12:24.374 [print] 12040
+21:12:24.382 request:
+2 > GET https://api.openbrewerydb.org/breweries/12039
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: __cfduid=d05e522daee4174ebc05bbed726ad31ff1619136743
+2 > Host: api.openbrewerydb.org
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+21:12:25.454 response time in milliseconds: 1072.10
+2 < 200
+2 < CF-Cache-Status: DYNAMIC
+2 < CF-RAY: 6442e14e691b9316-SJC
+2 < Cache-Control: max-age=86400, public
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Fri, 23 Apr 2021 00:12:24 GMT
+2 < Etag: W/"e4ea5e0ac199361bc637447376eaeb7e"
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=SwYXix1yvU1chcyzQ8eX61SPrsX75MXUYvHFEqcvR6BoU2zQ93bVfSj6bpgcwt92%2BFTwc4RDj2edqOGhM2LPOZggoYwyDBkhXl%2F7xDK5hHckNMqNzys%3D"}],"group":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+2 < Transfer-Encoding: chunked
+2 < Vary: Origin
+2 < Via: 1.1 vegur
+2 < X-Request-Id: 004add95-ddfb-4ea1-83db-a4390048f207
+2 < X-Runtime: 0.012730
+2 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+2 < cf-request-id: 099dab25050000931686a2c000000001
+{"id":12039,"obdb_id":"lagunitas-brewing-co-chicago","name":"Lagunitas Brewing Co","brewery_type":"large","street":"2607 W 17th St","address_2":null,"address_3":null,"city":"Chicago","state":"Illinois","county_province":null,"postal_code":"60608-1823","country":"United States","longitude":"-87.6932373","latitude":"41.8583603","phone":"7735222503","website_url":"http://www.lagunitas.com","updated_at":"2018-08-24T00:31:23.000Z","created_at":"2018-07-24T01:33:20.000Z"}
+
+21:12:25.455 [print] {
+  "country": "United States",
+  "brewery_type": "large",
+  "city": "Chicago",
+  "address_2": null,
+  "latitude": "41.8583603",
+  "address_3": null,
+  "created_at": "2018-07-24T01:33:20.000Z",
+  "obdb_id": "lagunitas-brewing-co-chicago",
+  "website_url": "http://www.lagunitas.com",
+  "updated_at": "2018-08-24T00:31:23.000Z",
+  "phone": "7735222503",
+  "street": "2607 W 17th St",
+  "name": "Lagunitas Brewing Co",
+  "county_province": null,
+  "id": 12039,
+  "state": "Illinois",
+  "postal_code": "60608-1823",
+  "longitude": "-87.6932373"
+}
+
+21:12:25.460 request:
+3 > GET https://api.openbrewerydb.org/breweries/12040
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Cookie: __cfduid=d05e522daee4174ebc05bbed726ad31ff1619136743
+3 > Host: api.openbrewerydb.org
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+21:12:26.226 response time in milliseconds: 765.28
+3 < 200
+3 < CF-Cache-Status: DYNAMIC
+3 < CF-RAY: 6442e1549db65530-EWR
+3 < Cache-Control: max-age=86400, public
+3 < Connection: keep-alive
+3 < Content-Type: application/json; charset=utf-8
+3 < Date: Fri, 23 Apr 2021 00:12:25 GMT
+3 < Etag: W/"8c35e00b53133e93207091f011cb7e50"
+3 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+3 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=VMRCcLivHwNsp8mpuzUnh5OXnUmGBz%2BfyQkT36BFYHQRaGFi63qggku97ZxfcCEXuDzmR5kOd6Djb4RNtkppoyZjGhKwNypz72XQcZYvEUrWV%2FBGp8c%3D"}],"group":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+3 < Transfer-Encoding: chunked
+3 < Vary: Origin
+3 < Via: 1.1 vegur
+3 < X-Request-Id: ee4d1361-a66c-4165-82a6-542aedd43ead
+3 < X-Runtime: 0.013012
+3 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+3 < cf-request-id: 099dab28da00005530a3049000000001
+{"id":12040,"obdb_id":"lagunitas-brewing-co-petaluma","name":"Lagunitas Brewing Co","brewery_type":"large","street":"1280 N McDowell Blvd","address_2":null,"address_3":null,"city":"Petaluma","state":"California","county_province":null,"postal_code":"94954-1113","country":"United States","longitude":"-122.6619198","latitude":"38.27264795","phone":"7077694495","website_url":"http://www.lagunitas.com","updated_at":"2018-08-23T23:58:45.000Z","created_at":"2018-07-24T01:32:58.000Z"}
+
+21:12:26.228 [print] {
+  "country": "United States",
+  "brewery_type": "large",
+  "city": "Petaluma",
+  "address_2": null,
+  "latitude": "38.27264795",
+  "address_3": null,
+  "created_at": "2018-07-24T01:32:58.000Z",
+  "obdb_id": "lagunitas-brewing-co-petaluma",
+  "website_url": "http://www.lagunitas.com",
+  "updated_at": "2018-08-23T23:58:45.000Z",
+  "phone": "7077694495",
+  "street": "1280 N McDowell Blvd",
+  "name": "Lagunitas Brewing Co",
+  "county_province": null,
+  "id": 12040,
+  "state": "California",
+  "postal_code": "94954-1113",
+  "longitude": "-122.6619198"
+}
+
+
+21:11:42.522 assertion failed: path: $[0].state, actual: null, expected: 'California', reason: actual json-path does not exist
+"Petaluma",
+  "address_2": null,
+  "latitude": "38.27264795",
+  "address_3": null,
+  "created_at": "2018-07-24T01:32:58.000Z",
+  "obdb_id": "lagunitas-brewing-co-petaluma",
+  "website_url": "http://www.lagunitas.com",
+  "updated_at": "2018-08-23T23:58:45.000Z",
+  "phone": "7077694495",
+  "street": "1280 N McDowell Blvd",
+  "name": "Lagunitas Brewing Co",
+  "county_province": null,
+  "id": 12040,
+  "state": "California",
+  "postal_code": "94954-1113",
+  "longitude": "-122.6619198"
+}
+
+
+"
+}
+
+20:03:45.678 [print] [
+  {
+    "country": "United States",
+    "brewery_type": "large",
+    "city": "Petaluma",
+    "address_2": null,
+    "latitude": "38.27264795",
+    "address_3": null,
+    "created_at": "2018-07-24T01:32:58.000Z",
+    "obdb_id": "lagunitas-brewing-co-petaluma",
+    "website_url": "http://www.lagunitas.com",
+    "updated_at": "2018-08-23T23:58:45.000Z",
+    "phone": "7077694495",
+    "street": "1280 N McDowell Blvd",
+    "name": "Lagunitas Brewing Co",
+    "county_province": null,
+    "id": 12040,
+    "state": "California",
+    "postal_code": "94954-1113",
+    "longitude": "-122.6619198"
+  }
+]
+

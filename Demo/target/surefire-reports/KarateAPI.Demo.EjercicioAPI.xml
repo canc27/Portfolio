@@ -1,0 +1,25 @@
+<testsuite failures="0" name="KarateAPI/Demo/EjercicioAPI.feature" skipped="0" tests="1" time="4.028217">
+  <testcase classname="KarateAPI.Demo.EjercicioAPI" name="Obtener una lista de cervecerias" time="4.028217">
+    <system-out>Given url 'https://api.openbrewerydb.org/breweries/autocomplete?query=lagunitas' . passed
+When method GET ........................................................... passed
+And print response ........................................................ passed
+* def filt = function(x){ return x.name == 'Lagunitas Brewing Co' } ....... passed
+* def items = get response[*] ............................................. passed
+* def res = karate.filter(items, filt) .................................... passed
+* print res ............................................................... passed
+* def id1 = res[0].id ..................................................... passed
+* def id2 = res[1].id ..................................................... passed
+* print id1 ............................................................... passed
+* print id2 ............................................................... passed
+Given url 'https://api.openbrewerydb.org/breweries/' + id1 ................ passed
+When method GET ........................................................... passed
+And print response ........................................................ passed
+Given url 'https://api.openbrewerydb.org/breweries/' + id2 ................ passed
+When method GET ........................................................... passed
+And print response ........................................................ passed
+And match response.state == "California" .................................. passed
+And match response.name == "Lagunitas Brewing Co" ......................... passed
+And match response.street == "1280 N McDowell Blvd" ....................... passed
+And match response.phone == "7077694495" .................................. passed</system-out>
+  </testcase>
+</testsuite>
